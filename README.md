@@ -77,8 +77,12 @@ Contributions are what make the open source community such an amazing place to b
 ## Referances
 
 [1]- https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
+
 [2]- https://www.mygreatlearning.com/blog/real-time-face-detection/
-[3]- https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG [4]- https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset
+
+[3]- https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG
+
+[4]- https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset
 
 ## License
 
