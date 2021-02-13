@@ -23,13 +23,20 @@ Our method to develop that mask detection can be seperated as “phase1: train m
 
 * Phase 1 - Step 1 : Load the dataset (659 images with mask, 680 images with images)
 * Phase 1 - Step 2: Preprocess the data, send it to MobileNet and then do max-pooling
+[![Figure](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/Figure.png)](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/Figure.png)
 * Phase 1 - Step 2 : Train using model
 * Phase 1 - Step 3: Serialize mask model to disk
+[![Figure1](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/Figure2.png)](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/Figure2.png)
 * Phase 2 - Step 1: Load mask model from disk (from the phase 1 step 3)
 * Phase 2 - Step 2 : Detect faces in image or in video
+[![Figure2](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/Figure1.png)](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/Figure1.png)
 * Phase 2 - Step 3 : Extract each face ROI
 * Phase 2 - Step 4 : Apply mask model to each face ROI to check the mask
 * Phase 2 - Step 5 : Show the result
+
+[![Figure4](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/without_mask.png)](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/without_mask.png)
+[![Figure3](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/with_mask.png)](https://github.com/nidadinch/Face-Mask-Detection/blob/main/Images/with_mask.png)
+
 
 
 ### DATASET
