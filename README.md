@@ -8,21 +8,28 @@ It is a project for Akdeniz University Computer Science Department - Image Proce
 
 ### INTRODUCTION TO PROBLEM
 Medical masks are being used for a long time in history. Due to the pandemic situation we are in the middle of, medical masks are having much more importance day by day. The virus we are trying to avoid from, cannot be reach a human body itself; it can only reach from the eyes and nose or mouth. Medical masks help us in that point.
+
 There is a 100% accurate solution to end this pandemic with stopping the whole daily life for a 15 days, however the life must go on, people has to work, firms must reach their goals, manufacturing cannot stop. So, the masks must be used. The main problem with that is, not every human being is aware of the situation and they are not giving enough importance to masks.
+
 Our system that we made is checking human faces to determine if they are using masks or not. It can be replaced as a control mechanism in the enterance of big buildings, hospitals, work places and any place that can be a possibility of a non-controllable crowd. It can be improved with an alarm system which gives a warning message to the security or it can also block the entering system and lock the doors for that person which does not have a mask.
+
 The difficulty with the development is image’s properties (pose of the head, location of the head, mask’s color and type) must be appropriate to check the mask. We fixed the problem with using a large set of data to train our program.
 
 ### SURVEY
 Mask detection is a new problem that we face recently so, there is not that much different methods to determine if there is a mask in a picture or in a video. The methods to detect the mask can be simply separated as “face detection + edge detection” and “training the program + deep learning”.
+
 In the first case we can talk about the history of face detection which is a long-time problem when compared to mask detection. [5]
+
 We can say that recently face detection algorithms are having much more importance and so, engineers work on that to improve it and to get better results. The main problem they are trying to figure out is to detect even if the environment is complex such as cluttered backgrounds and low quality images. Some of the algorithms that used are still too computationally expensive to be apply for a real time processing. However, this can be fixed with coming improvements in computer hardware technology.
+
 We can analyze methods separated as “feature-based” and “image-based”.
+
 Feature based methods can be used in real-time systems where color and motion is available. The main problem with that is, these methods cannot always provide visual cues to focus attention due to exhaustive multi resolution window scanning cannot always be preferable. In that case, the common approach to fix that problem is “skin color detection”.
-Image-based approaches are the most powerful techniques to process gray-scale images. Sung and Poggio and Rowley et al. Developed an algorithm on that topic and that algorithms is still can be used because it is still comparable with recent common algorithms.
-The high computational cost can be decreased with avoiding multi resolution window scanning with combining these two approaches with using visual clues like skin color when we are trying to find the face.
+
+Image-based approaches are the most powerful techniques to process gray-scale images. Sung and Poggio and Rowley et al. Developed an algorithm on that topic and that algorithms is still can be used because it is still comparable with recent common algorithms.The high computational cost can be decreased with avoiding multi resolution window scanning with combining these two approaches with using visual clues like skin color when we are trying to find the face.
+
 To conclude, detecting a face is still a hard problem to solve, considering the changes in faces over time like facial hair, glass usage, etc.
-In the second case which we used to determine if there is a mask or not, we basically followed the steps which are: collect a dataset with and without mask, load the dataset and train the program with selecting which ones have mask and which ones do not, serialize model to disk, detect faces and extract them ROI, apply our model to detect faces and check for a mask and finally show the result.
-It is much more robust solution because in that case we did not have to deal with the problems like cluttered background sor low quality images, we also did not deal with collecting a dataset to use visual clues about the skin color. To sum up, we did not focus on the face but the mask.
+In the second case which we used to determine if there is a mask or not, we basically followed the steps which are: collect a dataset with and without mask, load the dataset and train the program with selecting which ones have mask and which ones do not, serialize model to disk, detect faces and extract them ROI, apply our model to detect faces and check for a mask and finally show the result.It is much more robust solution because in that case we did not have to deal with the problems like cluttered background sor low quality images, we also did not deal with collecting a dataset to use visual clues about the skin color. To sum up, we did not focus on the face but the mask.
 The other specific reason that we picked that one is to learn the recent technological approaches to problems when compared to the old ones.
 
 ### METHOD DESCRIPTION
